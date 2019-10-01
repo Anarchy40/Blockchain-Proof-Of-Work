@@ -1,8 +1,19 @@
 var express = require('express')
 var app = express()
 
-app.get('/', function (req , res) {
-  res.send('Hello world')
-})
+app.get('/Blockchain', function (req , res) {
 
-app.listen(5000)
+});
+
+app.post('/transaction', function (req , res) {
+
+});
+
+app.get('/mine', function (req , res) {
+
+});
+
+
+app.listen(5000 , function(){
+  console.log('Listening on Port 5000...');
+});
